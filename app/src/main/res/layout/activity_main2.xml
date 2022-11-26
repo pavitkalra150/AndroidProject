@@ -1,85 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity2">
 
-    <LinearLayout
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:text="click me"
+        ></Button>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Hello World!"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal" />
+<!--    added in drawabe folder by new vector asset-->
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="101dp"
+        android:layout_height="156dp"
+        android:src="@drawable/ic_baseline_back_hand_24">
+    </ImageView>
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Name"
-            android:gravity="center"
-            android:layout_gravity="center_horizontal"/>
 
-        <EditText
-            android:id="@+id/Password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:layout_gravity="center_horizontal" />
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="REGISTER"
-            android:layout_marginTop="20dp"
-            android:paddingHorizontal="50dp"
-            android:layout_gravity="center_horizontal"
-            android:onClick="register" />
-
-        <!--        <Button-->
+<!--        <TextView-->
+<!--            android:id="@+id/textView"-->
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="wrap_content"-->
-<!--            android:padding="20dp"-->
-<!--            android:text="text 1" />-->
+<!--            android:gravity="center"-->
+<!--            android:text="Hello World!"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_gravity="center_horizontal" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextTextPersonName"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:hint="Name"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center_horizontal"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/Password"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:ems="10"-->
+<!--            android:gravity="center"-->
+<!--            android:hint="Password"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:layout_gravity="center_horizontal" />-->
 
 <!--        <Button-->
+<!--            android:id="@+id/button"-->
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:padding="20dp"-->
-<!--            android:text="text 2" />-->
+<!--            android:text="REGISTER"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:paddingHorizontal="50dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:onClick="register" />-->
 
-<!--        <Button-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="right"-->
-<!--            android:padding="20dp"-->
-<!--            android:text="text 3" />-->
+<!--        &lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="text 1" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="text 2" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="right"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="text 3" />&ndash;&gt;-->
 
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
